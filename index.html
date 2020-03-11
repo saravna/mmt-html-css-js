@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MakeMyTrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="side-nav">
+        <div onclick="movetotop()"class="snd" id="snd1">
+            <div></div>
+        </div>
+        <div onclick="movetooffers()" class="snd" id="snd2">
+            <div></div>
+        </div>
+        <div onclick="movetopromotions()" class="snd" id="snd3">
+            <div></div>
+        </div>
+    </div>
+    <div class="bg-gradient">
+        <div id="header" style="margin-bottom: 75px;">
+            <div style="padding-top: 5px;margin-bottom: 40px;">
+                <div class="ib" id="mmtlogo"></div>
+                <div class="ib" style="margin-left: 231px;">
+                    <div id="hdiv1" class="ib header-div"> 
+                        <div id="hdiv1icon" class="ib"></div>
+                        <div style="vertical-align: top;" class="ib tc">
+                            <p >MMTDOUBLEBLACK</p>
+                            <p>Free Cancellation Assured</p>
+                        </div>
+                    </div>
+                    <div id="hdiv2" class="ib header-div">
+                        <div id="hdiv2icon" class="ib"></div>
+                        <div style="margin-left: 5px;position: relative;bottom: 10px;" class="ib tc">
+                            <p>My Trips</p>
+                        </div>
+                    </div>
+                    <div id="hdiv3" class="ib header-div">
+                        <div id="hdiv3icon" class="ib"></div>
+                        <div class="ib">
+                            <p>24x7</p>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                    <div id="hdiv4" class="ib header-div">
+                        <div id="hdiv4icon"></div>
+                    </div>
+                    <div id="hdiv5" class="ib header-div">
+                        <div id="hdiv5icon" class="ib"></div>
+                        <div class="ib">
+                            <p style="font-size: 15px;">Introducing My Biz</p>
+                            <p style="letter-spacing: 0.1px;">Save more on Buisness Travel</p>
+                        </div>
+                    </div>
+                    <div id="hdiv6" class="ib header-div">
+                        <div id="hdiv6icon" class="ib"></div>
+                        <div style="position: relative; bottom: 8px;" class="ib">
+                            <p id="login">Login or Create Account</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="min-container">
+            <div id="flightsw">
+                <ul class="ib">
+                    <li class="ib" style="font-weight : bold;  margin: 0px 10px; padding: 2px;"><input style="color: white;background-color: black;" type="radio" name="trip" id="onewaycheck">ONE WAY</li>
+                    <li class="ib" style="font-weight : bold;  margin: 0px 10px; padding: 2px;"><input type="radio" name="trip" id="roundtrip">ROUND TRIP</li>
+                    <li class="ib" style="font-weight : bold;  margin: 0px 10px; padding: 2px;"><input type="radio" name="trip" id="multicity">MULTI CITY</li>
+                </ul>
+                <p class="ib" style="margin-left: 495px;font-size: 14px;font-weight: bold;">Book Domestic and International Flights</p>
+                <div>
+                    <div class="flightdiv" style="margin-top:5px;border:1px solid rgba(160, 160, 160, 0.384); border-radius: 10px;height: 100%;">
+                        <div style="width: 223px;" class="ib">
+                            <h6>FROM</h6>
+                            <h2>Delhi</h2>
+                            <h6>DEL, Delhi Airport India</h6>
+                        </div>
+                        <div class="ib" id="toandfrocon">
+                            <div id="toandfro"></div>
+                        </div>
+                        <div style="width: 239px;" class="ib">
+                            <h6>TO</h6>
+                            <h2>Banglore</h2>
+                            <h6>BLR, Kempegowda International Airp...</h6>
+                        </div>
+                        <div style="width: 114px;" class="ib">
+                            <h6>DEPARTURE</h6>
+                            <span style="font-size: 25px;font-weight: bolder;">10<span style="font-size: 15px;">Jan'20</span></span>
+                            <h6>Friday</h6>
+                        </div>
+                        <div style="width: 153px;" class="ib">
+                            <h6>RETURN</h6>
+                            <p>
+                                Tap to add a return date for bigger discounts
+                            </p>
+                        </div>
+                        <div style="width: 168px;border-radius:12px;overflow: hidden;" class="ib">
+                            <h6>TRAVELLERS & CLASS</h6>
+                            <span style="font-size: 25px;font-weight: bolder;">1 <span style="font-size: 15px;">Traveller</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="searchFooter">
+                    <button class="fareButton" style="background-color: #0f89fa;color: white;">REGULAR FARE</button>
+                    <button class="fareButton">STUDENT FARE</button class="fareButton">
+                    <span class="" style="height: 7px; background-color: rgba(160, 160, 160, 0.7);padding: 4px 0.5px;margin: 0px 20px;"></span>
+                    <div class="ib" style="margin-left: 20px;"> 
+                        <span class="f12">Trending Searches:</span>
+                        <span class="pa8 f12 m5 shadow">Banglore -> Singapore</span>
+                        <span class="pa8 f12 m5 shadow">Dubai -> Delhi</span>
+                        <span class="pa8 f12 m5 shadow">Delhi -> Dubai</span>
+                    </div>
+                    <button class="search">SEARCH</button>
+                </div>
+            </div>
+            <div id="super-offers">
+                <h1>Super Offers</h1>
+                <div id="offer-cat-con">
+                    <ul style="display: inline-block;">
+                        <li>ALL OFFERS</li>
+                        <li>BANK OFFERS</li>
+                        <li>DOMESTIC HOTELS</li>
+                        <li id="offers-more">MORE</li>
+                    </ul>
+                </div>
+                <div class="slick-button-container ib" style="margin-left: 200px;">
+                    <button class="slick-button" onclick="slick('r')"><</button>
+                    <button class="slick-button" onclick="slick('f')">></button>
+                </div>
+                    <div id="slick">
+                        <div style="overflow:hidden;margin-right: -40px;">
+                            <div id="slick-container">
+                                <div id="first" class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p id="offerdetail" style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div> 
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offer">
+                                    <div class="offer-inner-container">
+                                        <div class="offer-info">
+                                            <div class="ib vtop">
+                                                <img style="border-radius: 5px;margin-top: -20px;" src="https://promos.makemytrip.com/store//icici-11012020-116x116.jpg" alt="">
+                                            </div>
+                                            <div class="ib vtop" style="margin-left: 15px;">
+                                                <p style="margin: -20px 0px 20px;font-size: 14px;color: gray;font-weight: 800;">DOM FLIGHTS</p>
+                                                <div class="mb10" style="display: block;width: 250px;white-space: pre-line;font-weight: 900;font-size: 18px;">Get Upto Rs 1000 Off on Domestic Flights</div>
+                                                <span class="mb10" style="width: 33px;height: 1px;background-color: #eb2026;display: block;"></span>
+                                                <p style="white-space: pre-line;display: block;width: 250px; font-size: 12px;color: gray;">Exclusive Offers for ICICI  Bank Credit cards</p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <span class="tc" style="margin:0px 20px;font-size:10px;color:rgb(77, 77, 77);">T&C's Apply</span>
+                                            <span style="margin-left: 220px;font-size: 17px;color: blue;font-weight: 1000;">Book Now</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="promos-container">
+                <button onclick="promoslick('l')" style="position: relative;top:65px;left:-15px" class="promo-slick-button"><</button>
+                <div id="promo-slick">
+                    <div id="promo-slick-container">
+                        <div class="promos">
+                           <div style="display: flex;align-items: center;">
+                                <span class="promo-icon ib"></span>
+                                <p class="ib">Just Login and claim rewards upto Rs 555. Login Now before the offer Expires</p>
+                                <span style="padding-left:40px;">Login --></span>
+                            </div>
+                        </div>
+                        <div class="promos">
+                            <div style="display: flex;align-items: center;">
+                                 <span class="promo-icon ib"></span>
+                                 <p class="ib">Just Login and claim rewards upto Rs 555. Login Now before the offer Expires</p>
+                                 <span style="padding-left:40px;">Login --></span>
+                             </div>
+                         </div>
+                         <div class="promos">
+                            <div style="display: flex;align-items: center;">
+                                 <span class="promo-icon ib"></span>
+                                 <p class="ib">Just Login and claim rewards upto Rs 555. Login Now before the offer Expires</p>
+                                 <span style="padding-left:40px;">Login --></span>
+                             </div>
+                         </div>
+                         <div class="promos">
+                            <div style="display: flex;align-items: center;">
+                                 <span class="promo-icon ib"></span>
+                                 <p class="ib">Just Login and claim rewards upto Rs 555. Login Now before the offer Expires</p>
+                                 <span style="padding-left:40px;">Login --></span>
+                             </div>
+                         </div>
+                         <div class="promos">
+                            <div style="display: flex;align-items: center;">
+                                 <span class="promo-icon ib"></span>
+                                 <p class="ib">Just Login and claim rewards upto Rs 555. Login Now before the offer Expires</p>
+                                 <span style="padding-left:40px;">Login --></span>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <button onclick="promoslick('r')" style="position: relative;top:-86px;right: -1175px;" class="promo-slick-button">></button>
+            </div>
+            <div id="travel-blog">
+                <div style="margin-bottom: 40px;">
+                    <h1 style="font-size: 42px;">Travel Blog</h1>
+                    <p style="text-align: right;margin-top: 5px;padding-right: 20px;">
+                        <span style="font-size: 16px;color: blue;font-weight: 800;margin-right: 20px;position: relative;bottom: 8px;">VIEW ALL --></span>
+                        <span class="ib slick-button-container">
+                            <button class="travel-slick-button" onclick="travelslick('r')"><</button>
+                            <button class="travel-slick-button" onclick="travelslick('f')">></button>
+                        </span>
+                    </p>
+                </div>
+                <div id="travel-slick-container">
+                    <div style="overflow: hidden;">
+                        <div id="travel-slick">
+                            <div class="travel-item">
+                                <div >
+                                    <img src="https://seoimgak.mmtcdn.com/blog/sites/default/files/HERO-IMAGE.jpg?.eFClSNkI365KqUtB8gHDqL90HPcBTlF" height=129 width= 266 alt="">
+                                    <p style="padding: 0px 20px;">Budget-friendly Cottages in Goa with The Most Stunning ...</p>
+                                </div>
+                            </div>
+                            <div class="travel-item">
+                                <div>
+                                    <img src="https://seoimgak.mmtcdn.com/blog/sites/default/files/HI-1_167.jpg" height=129 width= 266 alt="">
+                                    <p style="padding: 0px 20px;">Romantic Hotels in Dubai for a Rejuvenating Couple Geta...</p>
+                                </div>
+                            </div>
+                            <div class="travel-item">
+                                <div>
+                                    <img src="https://seoimgak.mmtcdn.com/blog/sites/default/files/HERO-IMAGE.jpg?.eFClSNkI365KqUtB8gHDqL90HPcBTlF" height=129 width= 266 alt="">
+                                    <p style="padding: 0px 20px;">Budget-friendly Cottages in Goa with The Most Stunning ...</p>
+                                </div>
+                            </div>
+                            <div class="travel-item">
+                                <div>
+                                    <img src="https://seoimgak.mmtcdn.com/blog/sites/default/files/HI-1_167.jpg" height=129 width= 266 alt="">
+                                    <p style="padding: 0px 20px;">Romantic Hotels in Dubai for a Rejuvenating Couple Geta...</p>
+                                </div>
+                            </div>
+                            <div class="travel-item">
+                                <div>
+                                    <img src="https://seoimgak.mmtcdn.com/blog/sites/default/files/HERO-IMAGE.jpg?.eFClSNkI365KqUtB8gHDqL90HPcBTlF" height=129 width= 266 alt="">
+                                    <p style="padding: 0px 20px;">Budget-friendly Cottages in Goa with The Most Stunning ...</p>
+                                </div>
+                            </div>
+                            <div class="travel-item">
+                                <div>
+                                    <img src="https://seoimgak.mmtcdn.com/blog/sites/default/files/HI-1_167.jpg" height=129 width= 266 alt="">
+                                    <p style="padding: 0px 20px;">Romantic Hotels in Dubai for a Rejuvenating Couple Geta...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-links">
+                <div class="footer-column">
+                    <ul>
+                        <li><h4>PRODUCT OFFERING</h4></li>
+                        <li>Flights</li>
+                        <li>International Flights</li>
+                        <li>Hotels</li>
+                        <li>International Hotels</li>
+                        <li>Holidays in India</li>
+                        <li>International Holidays</li>
+                        <li>myBiz for SME Travel</li>
+                        <li>Cabs</li>
+                        <li>Cheap Tickets to India</li>
+                        <li>Bus Tickets</li>
+                        <li>Train tickets</li>
+                        <li>Route Planner</li>
+                        <li>Flight Status</li>
+                        <li>Mobile Apps</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h4>MAKEMYTRIP</h4></li>
+                        <li>About Us</li>
+                        <li>Investor Realtions</li>
+                        <li>Testimonial</li>
+                        <li>Reviews</li>
+                        <li>Careers</li>
+                        <li>Corporate Travel</li>
+                        <li>Travel Guide</li>
+                        <li>Travel Blog</li>
+                        <li>Offers</li>
+                        <li>Gift Vouchers</li>
+                        <li>MakeMyTrip coupons</li>
+                        <li>My Trip Essentials</li>
+                        <li>Deals</li>
+                        <li>Stories</li>
+                        <li>Trip Planner</li>
+                        <li>MMT Foundation</li>
+                        <li>CSR Policy</li>
+                        <li>Travel Community</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h4>ABOUT THE SITE</h4></li>
+                        <li>Contact Us</li>
+                        <li>Payment Security</li>
+                        <li>Privacy Policy</li>
+                        <li>User Agreement</li>
+                        <li>Terms of Service</li>
+                        <li>Visa Information</li>
+                        <li>More Offers</li>
+                        <li>Make A Payment</li>
+                        <li>Report a defect/MMT Bug Bounty</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h4>PARTNER PROGRAMS</h4></li>
+                        <li>Our Retail Stores</li>
+                        <li>Franchise Program Details</li>
+                        <li>Foreign Exchange</li>
+                        <li>Reliance - Travel Insurance</li>
+                        <li>List your hotel</li>
+                        <li>Redbus</li>
+                        <li>Goibibo</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h4>MORE LINKS</h4></li>
+                        <li>Honeymoon Packages</li>
+                        <li>Kullu Manali</li>
+                        <li>Family Packages</li>
+                        <li>Abdaman Honeymoon Package</li>
+                        <li>Goa Packages</li>
+                        <li>Kerala Tour Packages</li>
+                        <li>Rajasthan Tour Packages</li>
+                        <li>Ooty Packages</li>
+                        <li>Kerala Honeymoon Packages</li>
+                        <li>Bhutan Tour Packages</li>
+                        <li>Himachal Tour Packages</li>
+                        <li>Beach Packages</li>
+                        <li>Lakshadweep Tour Packages</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h4>IMPORTANT LINKS</h4></li>
+                        <li>Ladakh Tour Packages</li>
+                        <li>Andaman Tour Packages</li>
+                        <li>Nepal Tour Packages</li>
+                        <li>Kashnur Tour Packages</li>
+                        <li>Shimla Tour Packages</li>
+                        <li>Coorg Packages</li>
+                        <li>Gujarat Packages</li>
+                        <li>North East Tour Packages</li>
+                        <li>Manali Honeymoon Packages</li>
+                        <li>Golden Triangle Tour Packages</li>
+                        <li>Luxury Tour Packages</li>
+                        <li>South India Tour Packages</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="aboutmmt">
+            <div>
+                <div class="about">
+                    <p>Why Book Holidays With MakeMyTrip?</p>
+                    <p>MakeMyTrip.com, India's leading online travel company, has a profound understanding of Indian consumers travel needs and preferences. It offers a wide range of holiday packages in India and across the world, catering to various segments of travellers. While the dynamic or customized tour and travel packages give consumers an option to create and design their own holiday, the fixed departure holiday packages have a pre-designed itinerary; thus ensuring there is something to meet the holiday needs of every kind of traveller.</p>
+                </div>
+                <div class="about">
+                    <p>What Does MakeMyTrip Holidays Offer?</p>
+                    <p>MakeMyTrip offers a hassle-free holiday wherein all your travel needs are taken care of. Be it your accommodation in comfortable hotels, convenient transfers, varied sightseeing options and an array of activities to choose from, delectable meals and niche experiences - the holiday packages are designed such to offer you an unparalleled experience. Be it popular destinations such as Andaman, Kerala, Rajasthan and Kashmir, or more offbeat ones like North East, Ladakh and Uttarakhand, there are tailor-made packages for destinations from all over India. From distinctive honeymoon packages to exclusive tour packages for women, from itineraries designed for solo travellers, families with kids and for those who are young at heart - MakeMyTrip has an answer to all our holiday needs.</p>
+                </div>
+                <div class="about">
+                    <p>How To Book Holidays With MakeMyTrip?</p>
+                    <p>The user-friendly MakeMyTrip App and website make it easy for enthusiastic travellers to plan and book a holiday simply at the click of a button. Just use the filters and select the city you want to visit along with your travel dates, travel duration, specific preferences, if any, on hotels, kind of holiday, etc. and MakeMyTrip offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs. Else, you could also choose hotels of your choice, add sightseeing and activities to your list and have a package ready that best suits your requirement. You can choose to book your tour packages offline by dropping a query or chatting with our travel experts for immediate support. With MakeMyTrip, planning and buying your ideal holiday has never been easier.</p>
+                </div>
+            </div>
+        </div>
+        <div id="reference">
+            <div>
+                <img style="margin-right: 20px;" src="https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/androidAppImg.png" width=134 height="39" alt="">
+                <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/iosAppImg.png" width=134 height="39" alt="">
+            </div>
+        </div>
+        <div id="social-media">
+            <div style="margin: 0px 75.5px;display: flex;">
+                <div class="sm-icon"><span id="twitter"></span></div>
+                <div class="sm-icon"><span id="facebook"></span></div>
+                <div class="ib" style="margin-left: auto;color: white;">
+                    <h4 style="margin: 5px 0px;">© 2017 MAKEMYTRIP PVT. LTD.</h4>
+                    <h4 style="margin: 5px 10px;text-align: right;">Country India USA UAE</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="second-nav-div">
+        <div id="second-nav">
+            <div class="sec-nav">
+                <div id="secnavicon1"></div>
+                <p>Flights</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon2"></div>
+                <p>Hotel</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon3"></div>
+                <p>Villas & Apts</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon4"></div>
+                <p>Holidays</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon5"></div>
+                <p>Trains</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon6"></div>
+                <p>Buses</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon7"></div>
+                <p>Cabs</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon8"></div>
+                <p>Visa</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon9"></div>
+                <p>Giftcards</p>
+            </div>
+            <div class="sec-nav">
+                <div id="secnavicon10"></div>
+                <p>More</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
